@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Emotionally Gif-ted</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+	<header id="splash">
+		<div class="wrapper">
+			<h1>Emotionally Gif-ted</h1>
+			<h3>Feeling some kind of way but don't know how to express it?<br />You've found the right place.</h3>
+			<h2>Let's get emotional.</h2>
+			<div class="button">
+				<input type="file" name="file" id="take-selfie" class="inputfile" accept="image/*" />
+				<label for="take-selfie" id="file-button">Give me a selfie</label>
+			</div>
+			<p>Don't worry, we won't save it.</p>
+		</div>
+	</header>
+	<section>
+		<div class="wrapper main">
+			<div class="main-left">
+				<div class="photo-container">
+					<div class="photo-preview">
+					</div>
+				</div>
+				<p>Mouse-over to show detected faces.</p>
+			</div>
+			<div class="main-right">
+				<div class="loading">
+					<h2>Evaluating...</h2>
+				</div>
+				<h2 class="feeling">feeling {{emotion}}?</h2>
+				<div class="description">
+					<div class="description-gif"></div>
+					<div class="description-text">
+						<h3>{{placeholder short sentence about emotion}}</h3>
+					</div>
+				</div>
+				<h2>I got a playlist just for you!</h2>
+				<div class="spotify-container">
+					<div class="spotify-embed">
+					</div>
+					<p>Note: You must have a Spotify account to listen to your playlist.</p>
+				</div>
+				<div class="tweet-container">
+					<h2>Tweet it!</h2>
+					<!-- <h3>Let the world know!</h3> -->
+					<div class="tweet-box">
+						<div class="tweet"></div>
+						<div class="tweet-button"></div>
+					</div>
+				</div>
+				<input type="submit" class="new-playlist" value="Re-evaluate!">
+			</div>
+		</div>
+		<footer>
+			<p>Designed and developed by <a href="https://twitter.com/NGKayyy" target="blank">Kevin Ng</a> © 2016 | Powered by Spotify and GIPHY</p>
+		</footer>
+	</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script> -->
+	<script src="js/twitter.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

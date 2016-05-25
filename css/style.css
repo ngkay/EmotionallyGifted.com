@@ -1,0 +1,524 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  color: #444;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 63px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 33px;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 23px;
+}
+
+a {
+  color: #A0A0A0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+html {
+  background: #F5F5F5;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+header .wrapper {
+  padding-bottom: 0;
+}
+
+header .wrapper:after {
+  content: "#mood";
+  position: absolute;
+  bottom: 0;
+  right: calc(5% + 40px);
+  font-size: 10rem;
+  letter-spacing: -5px;
+  color: #DDD;
+  z-index: -1;
+}
+
+.button {
+  margin-bottom: 5px;
+  padding: 10px 0;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  margin-top: 50px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #333;
+  border: 1px solid #333;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.inputfile + label:hover {
+  background: #FFF;
+  border: 1px solid #A0A0A0;
+  color: #333;
+}
+
+section {
+  width: 100%;
+  background: #F5F5F5;
+}
+
+.main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-left, .main-right {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-left {
+  width: 49%;
+  max-width: 550px;
+  margin-right: 40px;
+  background: #333;
+  opacity: 0;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  transition: all .8s;
+}
+
+.main-left p {
+  padding: 5px 10px;
+  color: #FFF;
+}
+
+.photo-container {
+  width: 100%;
+  border: 1px solid #A0A0A0;
+  background: #FFF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-container:hover .faceRectangle {
+  opacity: .5;
+}
+
+.photo-container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.photo-preview {
+  width: 100%;
+  position: relative;
+}
+
+.photo-preview img {
+  width: 100%;
+  display: none;
+}
+
+.faceRectangle {
+  position: absolute;
+  box-shadow: 0 0 0 8px #FFF, 0 0 5px 1px #555 inset;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.main-right {
+  width: 49%;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  position: relative;
+}
+
+.loading {
+  background: #F5F5F5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.loading h2 {
+  display: none;
+}
+
+.description {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #A0A0A0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description-text {
+  padding: 10px;
+  background: #FFF;
+}
+
+.description-gif img {
+  width: 100%;
+}
+
+.spotify-container {
+  margin-bottom: 20px;
+  background: #333;
+}
+
+.spotify-container p {
+  padding: 5px 10px;
+  color: #FFF;
+}
+
+.tweet-box {
+  width: 100%;
+  padding: 20px;
+  background: #FFF;
+  border: 1px solid #A0A0A0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tweet {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tweet-button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-playlist {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #333;
+  border: 1px solid #333;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.new-playlist:hover {
+  background: #FFF;
+  border: 1px solid #A0A0A0;
+  color: #333;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .wrapper {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 700px) {
+  .main {
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .main-left, .main-right {
+    width: 100%;
+  }
+  .main-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .photo-container:after {
+    padding-bottom: 0;
+  }
+  .tweet-box {
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .tweet {
+    margin-bottom: 15px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+  }
+  header {
+    height: 30%;
+    margin-bottom: 20px;
+  }
+  header .wrapper {
+    padding: 20px 20px 0;
+  }
+  header .wrapper:after {
+    font-size: 7rem;
+    bottom: -15px;
+  }
+}
