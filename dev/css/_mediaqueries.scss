@@ -20,12 +20,20 @@
 		margin-right: 0;
 		margin-bottom: 20px;
 		max-width: 100%;
+
+		p {
+			display: none;
+		}
 	}
 
 	.photo-container {
 		&:after {
 			padding-bottom: 0;
 		}
+	}
+
+	.faceRectangle {
+		opacity: .5;
 	}
 
 	.tweet-box {

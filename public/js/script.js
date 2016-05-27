@@ -328,12 +328,12 @@ selfie.tweet = function(){
         .attr('href', 'http://twitter.com/share')
         .attr('data-url', 'http://www.emotionallygifted.com')
         .attr('data-text', 'Mood: ' + selfie.giphyTweetUrl + ". Get your mood at:")
-        .attr('data-hashtags', 'mood, ' + selfie.displayEmotion)
+        .attr('data-hashtags', 'emotionallygifted', 'mood, ' + selfie.displayEmotion)
         .attr('data-size', 'large');
     $('.tweet-button').append(tweetBtn);
     twttr.widgets.load();
     console.log(tweetBtn);
-    $('.tweet').html('<h3>Mood: ' + selfie.giphyTweetUrl + ". Get yours at: emotionallygifted.com #mood #" + selfie.finalEmotion + "</h3>");
+    $('.tweet').html('<h3>Mood: ' + selfie.giphyTweetUrl + ". Get yours at: EmotionallyGifted.com #emotionallygifted #mood #" + selfie.finalEmotion + "</h3>");
 };
 
 //function to fadeout 'loading' div
