@@ -384,8 +384,6 @@ footer {
       display: none; }
   .photo-container:after {
     padding-bottom: 0; }
-  .faceRectangle {
-    opacity: .5; }
   .tweet-box {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
