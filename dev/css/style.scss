@@ -194,10 +194,12 @@ section {
 	background: #FFF;
 	border: 1px solid #A0A0A0;
 	display: flex;
+	flex-flow: column nowrap;
 	justify-content: space-between;
 }
 
 .tweet {
+	margin-bottom: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

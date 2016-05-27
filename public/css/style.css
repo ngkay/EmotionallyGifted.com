@@ -325,10 +325,13 @@ section {
   border: 1px solid #A0A0A0;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
 .tweet {
+  margin-bottom: 15px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -383,12 +386,7 @@ footer {
     .main-left p {
       display: none; }
   .photo-container:after {
-    padding-bottom: 0; }
-  .tweet-box {
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap; }
-  .tweet {
-    margin-bottom: 15px; } }
+    padding-bottom: 0; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
