@@ -3,6 +3,7 @@ var selfie = {};
 selfie.init = function(){
 	selfie.getSelfie();
 	selfie.another();
+	$('.new-playlist').smoothScroll();
 };
 
 $(function(){
@@ -67,6 +68,7 @@ selfie.showSelfie = function(file){
 	$('#preview').fadeIn(800).css('display', 'block');
 	$('.loading').fadeIn(0);
 	$('.loading h2').fadeIn(800);
+	$('.loading-animation').fadeIn(800);
 
 	$('#file-button').text('Give me another selfie!')
 	$('.site-description').slideUp(800);
@@ -351,9 +353,12 @@ selfie.output = function(){
 //get another playlist
 selfie.another = function(){
 	$('.new-playlist').on('click', function(e){
+		// $('html, body').animate({
+		// 	scrollTop: $('#main').offset().top
+		// }, 800);
 		e.preventDefault();
 		$('.loading').fadeIn(0);
-		selfie.randomPlaylist(selfie.playlists.length);
 		selfie.randomGiphy(selfie.giphys.length);
+		selfie.randomPlaylist(selfie.playlists.length);
 	});
 };

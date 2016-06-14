@@ -20,7 +20,7 @@
 			<p>Don't worry, we won't save it.</p>
 		</div>
 	</header>
-	<section>
+	<section id="main">
 		<div class="wrapper main">
 			<div class="main-left">
 				<div class="photo-container">
@@ -31,6 +31,7 @@
 			</div>
 			<div class="main-right">
 				<div class="loading">
+					<div class="loading-animation"></div>
 					<h2>Evaluating...</h2>
 				</div>
 				<h2 class="feeling">feeling {{emotion}}?</h2>
@@ -54,7 +55,7 @@
 						<div class="tweet-button"></div>
 					</div>
 				</div>
-				<input type="submit" class="new-playlist" value="Re-evaluate!">
+				<input type="submit" class="new-playlist" onclick="location.href='#main';" value="Re-evaluate!">
 			</div>
 		</div>
 		<footer>
@@ -65,6 +66,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script> -->
 	<script src="js/googleanalytics.js"></script>
 	<script src="js/twitter.js"></script>
