@@ -202,7 +202,8 @@ header {
   background: #333;
   border: 1px solid #333;
   color: #FFF;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .25s; }
 
 .inputfile + label:hover {
   background: #FFF;
@@ -358,7 +359,8 @@ section {
   background: #333;
   border: 1px solid #333;
   color: #FFF;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .25s; }
   .new-playlist:hover {
     background: #FFF;
     border: 1px solid #A0A0A0;

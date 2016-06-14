@@ -259,6 +259,7 @@ header .wrapper:after {
   border: 1px solid #333;
   color: #FFF;
   cursor: pointer;
+  transition: all .25s;
 }
 
 .inputfile + label:hover {
@@ -422,6 +423,7 @@ section {
   border: 1px solid #333;
   color: #FFF;
   cursor: pointer;
+  transition: all .25s;
 }
 
 .new-playlist:hover {
