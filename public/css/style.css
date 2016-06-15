@@ -347,8 +347,10 @@ section {
   .description-gif img {
     width: 100%; }
 
-.spotify p {
-  padding: 5px 10px; }
+.spotify {
+  width: auto; }
+  .spotify p {
+    padding: 5px 10px; }
 
 .spotify-embed {
   width: 100%; }
@@ -428,6 +430,9 @@ footer {
     max-width: 100%; }
     .main-left p {
       display: none; }
+  .main-right {
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
   .photo-container:after {
     padding-bottom: 0; } }
 

@@ -36,6 +36,10 @@
 		}
 	}
 
+	.main-right {
+		flex-flow: column nowrap;
+	}
+
 	.photo-container {
 		&:after {
 			padding-bottom: 0;
