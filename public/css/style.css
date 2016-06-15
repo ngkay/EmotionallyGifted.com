@@ -137,19 +137,19 @@ h1, h2, h3, p {
   margin: 0; }
 
 h1 {
-  font-size: 6rem;
-  line-height: 63px;
+  font-size: 5rem;
+  line-height: 53px;
   letter-spacing: -1px; }
 
 h2 {
-  font-size: 3rem;
-  line-height: 33px;
+  font-size: 2.8rem;
+  line-height: 31px;
   letter-spacing: -1px;
   margin-bottom: 10px; }
 
 h3 {
-  font-size: 2rem;
-  line-height: 23px; }
+  font-size: 1.8rem;
+  line-height: 21px; }
 
 a {
   color: #A0A0A0;
@@ -165,22 +165,15 @@ html {
   width: 90%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 40px; }
+  padding: 25px; }
 
 header {
   width: 100%;
+  background: #FFF;
+  border-bottom: 1px solid #DDD;
   position: relative; }
-  header .wrapper {
-    padding-bottom: 0; }
-    header .wrapper:after {
-      content: "#mood";
-      position: absolute;
-      bottom: 0;
-      right: calc(5% + 40px);
-      font-size: 10rem;
-      letter-spacing: -5px;
-      color: #DDD;
-      z-index: -1; }
+  header h3 {
+    margin: 5px 0; }
 
 .button {
   margin-bottom: 5px;
@@ -218,20 +211,23 @@ section {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: start;
       align-items: flex-start; }
 
 .main-left, .main-right {
+  width: 49%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
       align-items: flex-start; }
 
 .main-left {
-  width: 49%;
   max-width: 550px;
-  margin-right: 40px;
-  background: #333;
+  margin-right: 25px;
+  background: #FFF;
+  border: 1px solid #DDD;
   opacity: 0;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
@@ -240,12 +236,10 @@ section {
       align-items: flex-start;
   transition: all .8s; }
   .main-left p {
-    padding: 5px 10px;
-    color: #FFF; }
+    padding: 5px 10px; }
 
 .photo-container {
   width: 100%;
-  border: 1px solid #A0A0A0;
   background: #FFF;
   display: -ms-flexbox;
   display: flex;
@@ -274,7 +268,6 @@ section {
   transition: all .5s; }
 
 .main-right {
-  width: 49%;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
   -ms-flex-align: stretch;
@@ -283,6 +276,21 @@ section {
   -ms-flex-positive: 2;
       flex-grow: 2;
   position: relative; }
+
+.main-left.thirds {
+  width: 30%; }
+
+.main-right.thirds {
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .main-right.thirds .description {
+    width: calc(60% - 25px); }
+  .main-right.thirds .spotify {
+    width: 40%; }
+  .main-right.thirds .twitter {
+    width: 100%; }
 
 .loading {
   background: #F5F5F5;
@@ -314,10 +322,16 @@ section {
   100% {
     transform: rotate(360deg); } }
 
-.description {
+.main-right-containers {
   width: 100%;
   margin-bottom: 20px;
-  border: 1px solid #A0A0A0;
+  background: #FFF;
+  border: 1px solid #DDD; }
+  .main-right-containers h2 {
+    margin: 0;
+    padding: 10px 15px; }
+
+.description {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
@@ -326,26 +340,23 @@ section {
       justify-content: space-between; }
 
 .description-text {
-  padding: 10px;
-  background: #FFF; }
+  padding: 10px 15px; }
 
 .description-gif {
   overflow: hidden; }
   .description-gif img {
     width: 100%; }
 
-.spotify-container {
-  margin-bottom: 20px;
-  background: #333; }
-  .spotify-container p {
-    padding: 5px 10px;
-    color: #FFF; }
+.spotify p {
+  padding: 5px 10px; }
+
+.twitter {
+  margin-bottom: 0; }
 
 .tweet-box {
   width: 100%;
-  padding: 20px;
-  background: #FFF;
-  border: 1px solid #A0A0A0;
+  padding: 10px 15px;
+  border-top: 1px solid #DDD;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
@@ -371,7 +382,7 @@ section {
       align-items: center; }
 
 .new-playlist {
-  margin-top: 20px;
+  margin: 20px auto 0;
   padding: 10px 15px;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -395,14 +406,18 @@ footer {
 @media (max-width: 940px) {
   .wrapper {
     width: 95%;
-    padding: 20px; } }
+    padding: 20px; }
+  .main-left.thirds {
+    width: 49%; }
+  .main-right.thirds .main-right-containers {
+    width: 100%; } }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .main {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
-  .main-left, .main-right {
+  .main-left.thirds, .main-right.thirds {
     width: 100%; }
   .main-left {
     margin-right: 0;
@@ -415,13 +430,11 @@ footer {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  h1 {
+    font-size: 6rem; }
   .wrapper {
     width: 100%; }
   header {
-    height: 30%;
-    margin-bottom: 20px; }
+    height: 30%; }
     header .wrapper {
-      padding: 20px 20px 0; }
-      header .wrapper:after {
-        font-size: 7rem;
-        bottom: -15px; } }
+      padding: 20px; } }

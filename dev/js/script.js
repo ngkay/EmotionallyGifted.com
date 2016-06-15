@@ -286,7 +286,7 @@ selfie.randomPlaylist = function(playlistLength){
 	selfie.finalPlaylist = selfie.playlists[selfie.randomNum];
 	console.log(selfie.finalPlaylist);
 
-	selfie.playlistHTML = '<iframe id="spotify" src="https://embed.spotify.com/?uri=' + selfie.finalPlaylist.uri + '&theme=white" width="100%" height="300" frameborder="0" allowtransparency="true"></iframe>';
+	selfie.playlistHTML = '<iframe id="spotify" src="https://embed.spotify.com/?uri=' + selfie.finalPlaylist.uri + '&theme=white" width="100%" height="350" frameborder="0" allowtransparency="true"></iframe>';
 
 	selfie.output();
 };
@@ -347,15 +347,13 @@ selfie.output = function(){
 	$('.spotify-embed').empty().append(selfie.playlistHTML);
 	$('.description-gif').empty().append(selfie.giphyHTML);
 	selfie.tweet();
+	$('.main-left, .main-right').addClass('thirds');
 	$('.loading').delay(800).fadeOut(800);
 };
 
 //get another playlist
 selfie.another = function(){
 	$('.new-playlist').on('click', function(e){
-		// $('html, body').animate({
-		// 	scrollTop: $('#main').offset().top
-		// }, 800);
 		e.preventDefault();
 		$('.loading').fadeIn(0);
 		selfie.randomGiphy(selfie.giphys.length);

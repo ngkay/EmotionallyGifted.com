@@ -4,15 +4,25 @@
 		width: 95%;
 		padding: 20px;
 	}
+
+	.main-left.thirds {
+		width: 49%;
+	}
+
+	.main-right.thirds {
+		.main-right-containers {
+			width: 100%;
+		}
+	}
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 	.main {
 		flex-flow: column nowrap;
 	}
 
-	.main-left, .main-right {
+	.main-left.thirds, .main-right.thirds {
 		width: 100%;
 	}
 
@@ -35,6 +45,10 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+	h1 {
+		font-size: 6rem;
+	}
+	
 	.wrapper {
 		width: 100%;
 		// padding: 0;
@@ -42,15 +56,15 @@
 
 	header {
 		height: 30%;
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 
 		.wrapper {
-			padding: 20px 20px 0;
+			padding: 20px;
 
-			&:after {
-				font-size: 7rem;
-				bottom: -15px;
-			}
+			// &:after {
+			// 	font-size: 7rem;
+			// 	bottom: -15px;
+			// }
 		}
 	}
 }
