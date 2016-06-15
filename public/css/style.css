@@ -350,6 +350,9 @@ section {
 .spotify p {
   padding: 5px 10px; }
 
+.spotify-embed {
+  width: 100%; }
+
 .twitter {
   margin-bottom: 0; }
 
@@ -417,7 +420,7 @@ footer {
   .main {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
-  .main-left.thirds, .main-right.thirds {
+  .main-left, .main-right, .main-left.thirds, .main-right.thirds {
     width: 100%; }
   .main-left {
     margin-right: 0;
